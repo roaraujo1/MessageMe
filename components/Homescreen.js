@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import FlatButton from "../ui/FlatButton";
 
-const Homescreen = () => {
-  return (
+const Homescreen = (props) => {
+  return(
     <View>
-      <Button
-        title= "Log in"/>
+      <FlatButton title={"Login"} onPress={props.handleSubmit} />
+      <FlatButton title={"Create Account"} onPress={props.handleSubmit} />
     </View>
+
   );
 };
 export default Homescreen;
