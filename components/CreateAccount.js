@@ -1,10 +1,15 @@
 import React from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import { View, TextInput, StyleSheet, Text } from "react-native";
+import FlatButton from "../ui/FlatButton";
 
 const CreateAccount = ({ navigation }) => {
   return (
     <View>
+      <Text>Enter Username: </Text>
       <TextInput style={styles.input}></TextInput>
+      <Text>Enter Password: </Text>
+      <TextInput style={styles.input} secureTextEntry={true} />
+      <FlatButton title={"Create Account"} />
     </View>
   );
 };
