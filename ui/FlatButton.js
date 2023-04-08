@@ -14,15 +14,18 @@ const FlatButton = ({ onPress, title }) => {
 const styles = StyleSheet.create({
   button: {
     borderRadius: 8,
-    paddingVertical: 14,
+    paddingVertical: 10,
     paddingHorizontal: 10,
-    backgroundColor: "yellow",
+    backgroundColor: "#fdfd96",
+    bottom: 80,
+
+    margin: 5,
+    width: 300,
   },
   title: {
     color: "pink",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontsize: 16,
     textAlign: "center",
   },
 });

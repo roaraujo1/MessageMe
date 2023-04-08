@@ -1,12 +1,22 @@
 import React from "react";
-import { Text,View,StyleSheet } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
-const Footer = ()=>{
-    return(
-        <View>
-            <Text>MessageMe</Text>
-        </View>
-    )
-
+const Footer = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>MessageMe</Text>
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    top: 250,
+  },
+  text: {
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "pink",
+  },
+});
 export default Footer;
