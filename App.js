@@ -6,14 +6,11 @@ import StackNavigator from "./StackNavigator";
 export default function App() {
   return (
     <NavigationContainer>
-      <StackNavigator >
-        <View >
+      <StackNavigator>
+        <View>
           <Homescreen />
         </View>
       </StackNavigator>
     </NavigationContainer>
   );
-};
-
-
-
+}

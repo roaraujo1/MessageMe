@@ -8,15 +8,19 @@ const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   return (
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={Homescreen}
-          options={{ title: "Welcome" }}
-        />
-        <Stack.Screen name="CreateAccount" component={CreateAccount} />
-        <Stack.Screen name="Login" component={Login}/>
-      </Stack.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Home"
+        component={Homescreen}
+        options={{ title: "Home" }}
+      />
+      <Stack.Screen
+        name="CreateAccount"
+        component={CreateAccount}
+        options={{ title: "Create Account" }}
+      />
+      <Stack.Screen name="Login" component={Login} />
+    </Stack.Navigator>
   );
 };
 export default MyStack;

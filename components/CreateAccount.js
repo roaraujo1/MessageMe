@@ -1,5 +1,21 @@
-const CreateAccount = ({navigation}) =>{
-    
+import React from "react";
+import { View, TextInput, StyleSheet } from "react-native";
 
+const CreateAccount = ({ navigation }) => {
+  return (
+    <View>
+      <TextInput style={styles.input}></TextInput>
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  },
+});
+
 export default CreateAccount;
