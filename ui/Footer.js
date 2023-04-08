@@ -11,7 +11,7 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   container: {
-    top: 250,
+    top: 300,
   },
   text: {
     fontWeight: "bold",

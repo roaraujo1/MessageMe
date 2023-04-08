@@ -17,10 +17,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 10,
     backgroundColor: "#fdfd96",
-    bottom: 80,
-
+    top: 80,
     margin: 5,
     width: 300,
+    alignSelf: "center",
+
   },
   title: {
     color: "pink",
