@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import FlatButton from "../ui/FlatButton";
 import Footer from "../ui/Footer";
 
-const Homescreen = ({ props, navigation }) => {
+const Homescreen = ({  navigation }) => {
   return (
     <View>
       <Image

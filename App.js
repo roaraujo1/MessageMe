@@ -1,16 +1,13 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, Text, View } from "react-native";
-import Homescreen from "./components/Homescreen";
-import StackNavigator from "./StackNavigator";
+import React from "react";
+import AppNav from "./components/AppNav";
 
-export default function App() {
+import { AuthProvider } from "./context/AuthContext";
+
+function App() {
   return (
-    <NavigationContainer>
-      <StackNavigator>
-        <View>
-          <Homescreen />
-        </View>
-      </StackNavigator>
-    </NavigationContainer>
+    <AuthProvider>
+      <AppNav />
+    </AuthProvider>
   );
 }
+export default App;
